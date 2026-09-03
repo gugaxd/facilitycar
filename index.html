@@ -95,10 +95,10 @@
     pointer-events: none;
   }
   .hero-text {
-    padding: 6rem 8vw 4rem;
+    padding: 6rem 2rem 4rem;
     position: relative; z-index: 2;
     text-align: center;
-    max-width: 860px;
+    max-width: 1000px;
     width: 100%;
   }
   .hero-badge {
@@ -111,7 +111,7 @@
   .hero-badge::before { content: '●'; font-size: 0.5rem; }
   .hero h1 {
     font-family: 'Sora', sans-serif;
-    font-size: clamp(1.9rem, 3.6vw, 2.9rem);
+    font-size: clamp(1.8rem, 3.1vw, 2.5rem);
     font-weight: 800; line-height: 1.15;
     color: var(--white); letter-spacing: -1.5px;
     margin-bottom: 1.25rem;
@@ -430,6 +430,7 @@
     /* HERO */
     .hero { min-height: auto; }
     .hero-text { padding: 4rem 5vw 4rem; }
+    .hero-br { display: none; }
     .hero h1 { font-size: clamp(1.5rem, 6.5vw, 2rem); white-space: normal; letter-spacing: -0.5px; }
     .hero-sub { font-size: 0.95rem; }
     .hero-actions { flex-direction: column; align-items: stretch; }
@@ -612,7 +613,7 @@
 <section class="hero">
   <div class="hero-text">
     <div class="hero-badge">Mobilidade para todos</div>
-    <h1>Transporte adaptado para <em>cadeirantes</em> em São José e Grande Florianópolis</h1>
+    <h1>Transporte adaptado para <em>cadeirantes</em><br class="hero-br"> em São José e Grande Florianópolis</h1>
     <p class="hero-sub">Veículo com rampa, motorista treinado e espaço para você e mais 3 acompanhantes. Consultas, exames, passeios ou compromissos em família — a gente leva e traz com segurança.</p>
     <div class="hero-actions">
       <a href="https://wa.me/5548996417994?text=Olá!%20Gostaria%20de%20agendar%20um%20transporte." class="btn-primary" target="_blank">
